@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'KHCategoryKit_Example' do
+  pod 'KHCategoryKit', :path => '../'
+
+  target 'KHCategoryKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end
